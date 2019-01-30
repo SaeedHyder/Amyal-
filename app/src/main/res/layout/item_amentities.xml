@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivAmentitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick1"/>
+
+
+    <com.app.amyal.ui.views.AnyTextView1
+        android:id="@+id/tvAmentitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/x5"
+        android:textSize="@dimen/x14"
+        app:typeface="@string/font_normal" />
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x5"
+        android:alpha="0.2"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/name" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:gravity="center_vertical"
+                android:hint="@string/name_of_the_guest"
+                android:imeOptions="actionNext"
+                android:inputType=""
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/email" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:testType="email"
+                app:typeface="@string/font_normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/calender" />
+
+            <TextView
+                android:id="@+id/tvDOB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/dob"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/gender" />
+
+            <Spinner
+                android:id="@+id/spGender"
+                style="@style/filter_spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginBottom="@dimen/x2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x25"
+            android:background="@drawable/btn"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

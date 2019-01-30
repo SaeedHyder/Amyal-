@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/ivAirline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x180"
+                android:scaleType="fitXY"
+                android:src="@drawable/hotel_details" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkBrown"
+                android:orientation="vertical"
+                android:padding="@dimen/x15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvAirlineName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:maxLines="1"
+                        tools:text="American Airlines"
+                        android:maxLength="25"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x16"
+                        app:typeface="@string/font_normal" />
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvTotalDuaration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:layout_toLeftOf="@id/tvTotalDuarationValue"
+                        android:maxLines="1"
+                        android:text="@string/total_duaration"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x12"
+                        app:typeface="@string/font_normal" />
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvTotalDuarationValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x12"
+                        app:typeface="@string/font_normal"
+                        tools:text="6hr 14m" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.amyal.ui.views.CustomRatingBar
+                        android:id="@+id/CrRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x15"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:visibility="visible"
+                        app:maxStars="5"
+                        app:onlyForDisplay="true"
+                        app:starOff="@drawable/star1"
+                        app:starOn="@drawable/star"
+                        app:starPadding="@dimen/x2"
+                        app:stars="4" />
+
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:maxLines="1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        tools:text="AED 1500.00/"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x12"
+                        app:typeface="@string/font_normal" />
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x2"
+                        android:alpha="0.6"
+                        android:visibility="gone"
+                        android:maxLines="1"
+                        android:text="Person"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x12"
+                        app:typeface="@string/font_normal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.amyal.ui.views.AnyTextView
+                        android:id="@+id/tvFlightDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:maxLines="1"
+                        tools:text="Fri Nov 10, 2017"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x12"
+                        app:typeface="@string/font_normal" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/lvFlightStops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x15"
+                android:divider="@null"></ListView>
+
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x60"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:background="@drawable/btn"
+                android:text="@string/select_this_flight"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x18" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

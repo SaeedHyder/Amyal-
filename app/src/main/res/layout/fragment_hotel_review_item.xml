@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10"
+        android:background="@drawable/roundshapelayout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:scaleType="fitXY"
+            android:src="@drawable/profilepic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x5"
+                android:orientation="horizontal">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/x15"
+                    android:layout_centerVertical="true"
+                    android:maxLength="20"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="Mark Rufalo"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.CustomRatingBar
+                    android:id="@+id/CrRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x15"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    app:maxStars="5"
+                    app:onlyForDisplay="true"
+                    app:starOff="@drawable/star1"
+                    app:starOn="@drawable/star"
+                    app:starPadding="@dimen/x2"
+                    app:stars="4" />
+
+
+            </RelativeLayout>
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:layout_marginLeft="@dimen/x7"
+                android:textSize="@dimen/x11"
+                android:text="Junly 22 2017"
+                app:typeface="@string/font_normal" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:layout_marginLeft="@dimen/x7"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_marginBottom="@dimen/x5"
+                android:textSize="@dimen/x11"
+                android:text="Lorem Ipsum is simply dummy text of the printing industry. Lorem Ipsum has been the"
+                app:typeface="@string/font_normal" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

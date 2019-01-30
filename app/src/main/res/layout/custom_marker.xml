@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@drawable/hotelpin"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/txt_pick_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:text="USD 500 - 1000"
+        android:textSize="@dimen/x12"
+        android:layout_marginTop="@dimen/x3"
+        android:padding="@dimen/x5"
+        android:layout_below="@+id/img_icon"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

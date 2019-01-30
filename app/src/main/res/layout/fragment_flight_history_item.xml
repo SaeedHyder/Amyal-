@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/x5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10"
+        android:background="@drawable/roundshapelayout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivFlightType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            tools:src="@drawable/round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvTripName"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkBrown"
+                    android:textSize="@dimen/x18"
+                    android:maxLines="1"
+                    tools:text="LAS to FLO"
+                    app:typeface="@string/font_normal" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/x5"
+                android:textSize="@dimen/x13"
+                android:text="Total Duration"
+                android:alpha="0.8"
+                app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvFlightDuraion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:layout_marginLeft="@dimen/x7"
+                    android:layout_marginTop="@dimen/x5"
+                    android:textSize="@dimen/x13"
+                    android:text="11h 44M"
+                    android:alpha="0.7"
+                    app:typeface="@string/font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:layout_marginTop="@dimen/x5"
+                    android:textSize="@dimen/x13"
+                    android:text="15 Oct 2017"
+                    android:alpha="0.8"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:layout_marginLeft="@dimen/x7"
+                    android:layout_marginTop="@dimen/x5"
+                    android:textSize="@dimen/x13"
+                    android:text="- 19 Oct 2017"
+                    android:alpha="0.8"
+                    app:typeface="@string/font_normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x5">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/x7"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/x13"
+                    android:text="AED 15000.00"
+                    app:typeface="@string/font_normal" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

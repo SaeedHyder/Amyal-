@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/x2">
+
+    <TextView
+        android:id="@+id/tvAtoZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x8"
+        android:text="@string/a_to_z"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tvZtoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x8"
+        android:text="@string/z_to_a"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x8"
+        android:text="@string/rating"
+        android:textColor="@color/black" />
+</LinearLayout>

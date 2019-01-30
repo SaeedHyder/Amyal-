@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x5"
+            android:alpha="0.2"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:id="@+id/ll_cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginTop="@dimen/x25"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_bg_drawable"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spCardType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x45"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    style="@style/spinner_style"
+                    android:textSize="@dimen/x15" />
+
+            </LinearLayout>
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/ed_creditcard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/iconcard"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="start|center_vertical"
+                android:hint="@string/credit_card_number"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:inputType="number"
+                android:maxLength="16" />
+
+           <!-- android:drawableRight="@drawable/mastercard"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.9"
+                android:background="@color/white" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/ed_expir_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="@dimen/x10"
+                android:maxLength="7"
+                android:gravity="start|center_vertical"
+                android:hint="@string/expiring_date"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:inputType="date" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.9"
+                android:background="@color/white" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/ed_CVV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/iconccv"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="start|center_vertical"
+                android:hint="@string/cvv"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:inputType="number"
+                android:maxLength="3"
+                app:testType="numeric"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.9"
+                android:background="@color/white" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/ed_name_app_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="start|center_vertical"
+                android:hint="@string/name_appearing_on_the_card"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:inputType="text"
+                app:testType="personFullName"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.9"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginTop="@dimen/x25"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/x18"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/txtTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginTop="@dimen/x20"
+                    android:text="@string/terms_and_condition"
+                    android:textColor="@color/white"
+                    app:typeface="@string/font_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x5"
+        android:alpha="0.2"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x18"
+        android:layout_marginBottom="@dimen/x18"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:id="@+id/txtNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/notification"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x17"
+            app:typeface="@string/font_normal" />
+
+
+        <ToggleButton
+            android:id="@+id/toggleNotification"
+            android:layout_width="@dimen/x28"
+            android:layout_height="@dimen/x18"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_marginRight="@dimen/x12"
+            android:background="@drawable/selector_toggle"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"/>
+
+        <LinearLayout
+            android:id="@+id/llNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x15"
+                android:layout_marginStart="@dimen/x25"
+                android:src="@drawable/notification" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/notification"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+    <LinearLayout
+        android:id="@+id/llChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginStart="@dimen/x22"
+            android:src="@drawable/lock" />
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/x20"
+            android:text="@string/changepassword"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x17"
+            app:typeface="@string/font_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/x10"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"/>
+
+    <LinearLayout
+        android:id="@+id/llManageBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginStart="@dimen/x22"
+            android:src="@drawable/managebooking" />
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/x20"
+            android:text="@string/manage_bookings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x17"
+            app:typeface="@string/font_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/x10"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginEnd="@dimen/x15"/>
+
+        <LinearLayout
+            android:id="@+id/llPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginStart="@dimen/x22"
+                android:src="@drawable/policy" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+        <LinearLayout
+            android:id="@+id/llLanguageCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginStart="@dimen/x22"
+                android:src="@drawable/language" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/language_currency"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+        <LinearLayout
+            android:id="@+id/llAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginStart="@dimen/x22"
+                android:src="@drawable/about" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/about_amyal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+
+        <LinearLayout
+            android:id="@+id/llTermsConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginStart="@dimen/x22"
+                android:src="@drawable/tc" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/terms_conditions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+        <LinearLayout
+            android:id="@+id/llContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginStart="@dimen/x22"
+                android:src="@drawable/contact" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/contactus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x17"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginEnd="@dimen/x15"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/x35"
+            android:layout_marginBottom="@dimen/x60">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/share_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivFb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x25"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/ivTw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x25"
+                    android:src="@drawable/tw" />
+
+                <ImageView
+                    android:id="@+id/ivGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/google" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

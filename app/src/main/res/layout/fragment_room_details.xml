@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slRoom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x180"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/pagerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/x5"
+                android:gravity="center"
+                custom:selected_color="@color/darkBrown"
+                custom:selected_height="@dimen/x15"
+                custom:selected_padding_left="@dimen/x15"
+                custom:selected_padding_right="@dimen/x15"
+                custom:selected_width="@dimen/x15"
+                custom:shape="oval"
+                custom:unselected_color="@color/grey"
+                custom:unselected_height="@dimen/x10"
+                custom:unselected_padding_left="@dimen/x10"
+                custom:unselected_padding_right="@dimen/x10"
+                custom:unselected_width="@dimen/x10" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBrown"
+            android:orientation="vertical"
+            android:padding="@dimen/x11">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvRoomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Delux Room"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x16"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvRatting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_toLeftOf="@id/tvRattingInWord"
+                    android:maxLines="1"
+                    android:text="3.4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x12"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvRattingInWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x12"
+                    app:typeface="@string/font_normal"
+                    android:text="Very Good" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.CustomRatingBar
+                    android:id="@+id/CrHotelRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x15"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:visibility="visible"
+                    app:maxStars="5"
+                    app:onlyForDisplay="true"
+                    app:starOff="@drawable/star1"
+                    app:starOn="@drawable/star"
+                    app:starPadding="@dimen/x2"
+                    app:stars="4" />
+
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="AED 1500.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    app:typeface="@string/font_normal" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x15"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/checkin1"
+                    android:drawablePadding="@dimen/x5"
+                    android:gravity="left"
+                    android:text="Check-in Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvCheckInTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"
+                    android:gravity="left"
+                    android:text="12:00 pm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x12"
+                    app:typeface="@string/font_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/checkin1"
+                    android:drawablePadding="@dimen/x5"
+                    android:gravity="left"
+                    android:text="Check-out Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvCheckOutTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"
+                    android:gravity="left"
+                    android:text="10:00 am"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x12"
+                    app:typeface="@string/font_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About this Room"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x18"
+                app:typeface="@string/font_normal" />
+
+            <com.app.amyal.ui.views.AnyTextView1
+                android:id="@+id/tvAboutRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:layout_marginTop="@dimen/x5"
+                android:ellipsize="end"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                app:typeface="@string/font_normal" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvReadmore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/readmore"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:id="@+id/llAmentities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x150"
+                android:orientation="vertical">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amenities"
+                    android:textColor="@color/darkBrown"
+                    android:textSize="@dimen/x18"
+                    app:typeface="@string/font_normal" />
+
+
+                <GridView
+                    android:id="@+id/gvAmentities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:numColumns="2"
+                    android:layout_marginTop="@dimen/x10"
+                    android:horizontalSpacing="@dimen/x30"
+                    android:verticalSpacing="@dimen/x10"
+                    />
+
+
+            </LinearLayout>
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/BtnViewAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/x5"
+                android:text="@string/see_all"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:id="@+id/viewSepratorAmenties"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white"/>
+
+            <com.app.amyal.ui.views.AnyTextView1
+                android:id="@+id/tvNearBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:drawableLeft="@drawable/trainicon"
+                android:drawablePadding="@dimen/x5"
+                android:gravity="left"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="1.3 km from train station (Bally's)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x12"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:id="@+id/viewNearby"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white"/>
+
+            <GridView
+                android:id="@+id/gvRoomExtras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:numColumns="1"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/x10"
+                android:horizontalSpacing="@dimen/x30"
+                android:verticalSpacing="@dimen/x10"
+                />
+
+            <!--<com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast Included"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/tick1"
+                android:layout_marginLeft="@dimen/x10"
+                android:drawablePadding="@dimen/x10"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Cancellation"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/tick1"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:drawablePadding="@dimen/x10"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />-->
+
+            <View
+                android:id="@+id/gvRoomExtrasview"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white"/>
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvRoomSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 People Space"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/people"
+                android:layout_marginLeft="@dimen/x10"
+                android:drawablePadding="@dimen/x10"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:id="@+id/vRoomSpace"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/llHotelPolicies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/policy1"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:drawablePadding="@dimen/x10"
+                    android:gravity="left"
+                    android:text="@string/hotel_policies"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nxt" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/llHotelFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/facilities"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:drawablePadding="@dimen/x10"
+                    android:gravity="left"
+                    android:text="@string/hotel_facilities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nxt" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/x15"
+                android:alpha="0.2"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x20"
+            android:layout_marginStart="@dimen/x20"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_marginBottom="@dimen/x60"
+            android:background="@drawable/btn"
+            android:text="@string/book_room"
+            android:textAllCaps="false"
+            android:textSize="@dimen/x18"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

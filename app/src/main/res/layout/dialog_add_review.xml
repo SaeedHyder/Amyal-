@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/x300"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center"
+            android:text="@string/review"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x19"
+            app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:id="@+id/btnCLose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15"
+                android:paddingTop="@dimen/x8"
+                android:paddingBottom="@dimen/x8"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:src="@drawable/cross_red"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.2"
+            android:background="@color/gray_dark"/>
+
+        <com.app.amyal.ui.views.CustomRatingBar
+            android:id="@+id/CrRating"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x30"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x10"
+            android:visibility="visible"
+            app:maxStars="5"
+            app:starOff="@drawable/star_red"
+            app:starOn="@drawable/star1_red"
+            app:starPadding="@dimen/x2"
+            app:stars="4" />
+
+
+        <com.app.amyal.ui.views.AnyEditTextView
+            android:id="@+id/edtReview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:alpha="0.7"
+            android:background="@drawable/stroke_rectangle"
+            android:gravity="left"
+            android:layout_margin="@dimen/x15"
+            android:layout_gravity="left"
+            android:hint="@string/enter_your_review_here"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="@dimen/x15"
+            android:singleLine="false"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/dark_grey"
+            android:textSize="@dimen/x16"
+            app:typeface="@string/font_normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x15"
+            android:text="@string/submit"
+            android:background="@drawable/btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

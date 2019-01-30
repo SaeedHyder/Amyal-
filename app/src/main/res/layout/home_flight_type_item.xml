@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llMain"
+    android:paddingTop="@dimen/x15"
+    android:paddingBottom="@dimen/x15"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20">
+
+    <ImageView
+        android:id="@+id/ivFlightType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/business1" />
+
+    <com.app.amyal.ui.views.AnyTextView
+        android:id="@+id/tvFlightType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Economy"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/darkBrown"
+        android:layout_marginTop="@dimen/x5"
+        android:textSize="@dimen/x14"
+        app:typeface="@string/font_normal"/>
+
+</LinearLayout>

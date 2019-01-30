@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBrown"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llLeftTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/check_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x18"
+                app:typeface="@string/font_normal" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvLeftDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/selectDate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:id="@+id/vLeftIndecator"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRightTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/check_out"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x18"
+                app:typeface="@string/font_normal" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:id="@+id/tvRightDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/selectDate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+
+            <View
+                android:id="@+id/vRightIndecator"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x25"
+            android:background="@drawable/roundshapelayout">
+
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cvLeftTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/x10"
+                app:mcv_dateTextAppearance="@style/DateTextApperence"
+                app:mcv_headerTextAppearance="@style/HeadderTextApperence"
+                app:mcv_selectionColor="@color/darkBrown"
+                app:mcv_showOtherDates="none"
+                app:mcv_weekDayTextAppearance="@style/DateTextApperence" />
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cvRightTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/x10"
+                android:visibility="gone"
+                app:mcv_dateTextAppearance="@style/DateTextApperence"
+                app:mcv_headerTextAppearance="@style/HeadderTextApperence"
+                app:mcv_selectionColor="@color/darkBrown"
+                app:mcv_showOtherDates="none"
+                app:mcv_weekDayTextAppearance="@style/DateTextApperence" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginBottom="@dimen/x60"
+            android:background="@drawable/btn"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x18" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

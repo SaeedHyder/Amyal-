@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- mark favourite message -->
+    <string name="successful">Successfully marked as favourites</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+  <!--  <string name="api_key">AIzaSyCQpUf689kOKkfB_y8vPxUhO1SiGO0QSEg</string>-->
+    <string name="api_key">AIzaSyAeemxy6VpyvNNr9FnIIh2CSXrW0ONi63Y</string>
+    <string name="app_name">HesenalMusafer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Error Messages -->
+    <string name="error_passwords_do_not_match">Passwords do not match.</string>
+    <string name="error_could_not_connect">Could not connect to server. Please try again later.</string>
+    <string name="error_cannot_create_account">Account already exists!</string>
+    <string name="error_cannot_sign_in">Please provide correct Email and Password</string>
+    <string name="crash_toast_text">Sorry for inconvenience, we will get this issue fixed!</string>
+    <string name="msg_connection_failed">Error! Connection to server failed.</string>
+    <string name="msg_connection_error">Please check your internet connection</string>
+
+    <!-- Date Time -->
+    <string name="common.months">months</string>
+    <string name="common.weeks">weeks</string>
+    <string name="common.days">days</string>
+    <string name="common.hrs">hrs</string>
+    <string name="common.mins">mins</string>
+    <string name="common.secs">secs</string>
+    <string name="common.ago">ago</string>
+
+    <!-- AnyTextView -->
+    <string name="typeface_not_found">Typeface %$1 not found, or could not be loaded.
+        Showing default typeface.</string>
+    <string name="app">AnyTextView</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="txt_enter_phone_no">Enter Phone No.</string>
+    <string name="txt_register_text">Verificaion process is required to verify the phone no.</string>
+    <string name="message_quit">Are you sure you want to exit?</string>
+    <string name="message_wait">Please wait while data is loading.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="click_here">  Click Here</string>
+    <string name="imgdesc_signup">Sign Up</string>
+    <string name="imgdesc_signin">Sign In</string>
+    <string name="back_to_login"><u>Back to Login</u></string>
+    <string name="remember_me">remember me</string>
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="categories">Categories</string>
+    <string name="messages">Messages</string>
+    <string name="settings">Settings</string>
+    <string name="search_hint">Search Ads, User or Category</string>
+    <string name="password_sent">Your password will be sent to your \nemail address</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="reason_for_rejection">REASON</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="via_email">Via Email</string>
+    <string name="via_sms">Via SMS</string>
+    <string name="tell_a_friend">TELL A FRIEND</string>
+    <string name="contact_email">contact@voltas.com</string>
+    <string name="contact_phone">5555 555 555</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="you_paid">YOU PAID</string>
+    <string name="tap_to_rate">TAP A STAR TO RATE DRIVER</string>
+    <string name="contact_address">Columbus College of Arts, New York</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and types
+        etting industry. Lorem Ipsum has been the industrys standard dummy text ever sinc
+        e the 1500s, when an unknown printer took a galley of type and scrambled it t
+        o make a type specimen book. It has survived not only five centuries, but
+         also the leap into electronic typesetting, remaining essentially unchanged
+         . It was popularised in the 1960s with the release of Letraset sheets cont
+         aining Lorem Ipsum passages, and more recently with desktop publishing so
+         ftware like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string name="terms_ipsum">Lorem Ipsum is simply dummy text of the printing and types
+        etting industry. Lorem Ipsum has been the industrys standard dummy text ever sinc
+        e the 1500s, when an unknown printer took a galley of type and scrambled it t
+        o make a type specimen book. It has survived not only five centuries, but
+         also the leap into electronic typesetting, remaining essentially unchanged
+         . It was popularised in the 1960s with the release of Letraset sheets cont
+         aining Lorem Ipsum passages, and more recently with desktop publishing so
+         ftware like Aldus PageMaker including versions of Lorem Ipsum. </string>
+    <string name="this_is_login_fragment">This is Login Fragment</string>
+
+    <string name="default_hint_text">Where are you going?</string>
+
+    <string name="connection_lost">No Internet Found</string>
+
+
+    <!--FONTS-->
+    <string name="font_normal">Poppins-Regular_1.ttf</string>
+    <string name="font_bold">Poppins-Bold_1.ttf</string>
+    <string name="font_italic_bold">Roboto-Italic_2.ttf</string>
+    <string name="font_italic_light">Roboto-LightItalic_2.ttf</string>
+    <string name="font_handwriting">segoeprb_1.ttf</string>
+
+    <!--<string name="facebook_app_id">1934613076857760</string>-->
+    <!--<string name="fb_login_protocol_scheme">1934613076857760</string>-->
+    <string name="facebook_app_id">329987394276706</string>
+    <string name="fb_login_protocol_scheme">fb329987394276706</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">pFwsdRWMN0TONGmfLEwMS47wC</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">XRgV9xtfJv9o1JHEeZnD70GeWAW5YTt0q76PT4CJi8OvisLpla</string>
+
+
+    <string name="notification">Notifications</string>
+    <string name="welcome">Welcome</string>
+    <string name="hotel">HOTEL</string>
+    <string name="flight">FLIGHT</string>
+    <string name="register">Register</string>
+    <string name="or">or</string>
+    <string name="special_packages">SPECIAL PACKAGES</string>
+    <string name="car_rental">CAR RENTAL</string>
+    <string name="email">Email Address</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="email_error">Enter valid Email</string>
+    <string name="password_error">Enter valid Password</string>
+    <string name="password_length_alert">Password should be 6 or more characters long</string>
+    <string name="password_different">Old password and new password should be different</string>
+    <string name="enter_your_email_address_and_w_ll_send_n_you_a_link_to_rest_you_password">Enter your email address and we\'ll send \n you a link to reset you password.</string>
+    <string name="submit">Submit</string>
+    <string name="reset_password_message">An email has been sent to your account with password reset link.</string>
+    <string name="reset_password_message1">An email has been sent to your account with new password.</string>
+    <string name="reset_password_title">Reset</string>
+    <string name="ok">Ok</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="signup">Signup</string>
+    <string name="confirm_pas_not_match">Confirm Password Not Match</string>
+    <string name="please_accept_terms">Please accept terms and conditions</string>
+    <string name="profile_pic">Profile Photo</string>
+    <string name="how_to_set_profile_pic">How do you want to set your Profile Photo?</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="please_select_profile_photo">Please set profile photo</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="enter_your_valuable_feedback_here">Enter your valuable feedback here.</string>
+    <string name="contactus">Contact Us</string>
+    <string name="feedback_sent">Feedback sent to Administration</string>
+    <string name="changepassword">Change Password</string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="done">Done</string>
+    <string name="pasword_change_sucess">Password changed successfully</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="my_profile">My Profile</string>
+    <string name="profile_updated_success">Profile updated successfully</string>
+    <string name="view_profile">View Profile</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="search">Search</string>
+    <string name="booking_history">Booking History</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="cars">Cars</string>
+    <string name="specialpackages">Special Packages</string>
+    <string name="specialpackage">Special Package</string>
+    <string name="roundtrip">Round Trip</string>
+    <string name="oneway">One Way</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="travellers">Travellers</string>
+    <string name="returntext">Return</string>
+    <string name="departure">Departure</string>
+    <string name="selectDate">Select Date</string>
+    <string name="selectDates">Select Dates</string>
+    <string name="adult">Adult</string>
+    <string name="childern">Children</string>
+    <string name="infant">Infant</string>
+    <string name="no_of_travellers">No. Of Travellers</string>
+    <string name="stops">Stops</string>
+    <string name="airlines">Airlines</string>
+    <string name="flight_duration">Flight Duration</string>
+    <string name="filter">Filter</string>
+    <string name="_10_min">10 Min</string>
+    <string name="_30_hrs">30 Hrs</string>
+    <string name="_12_00_am">12:00 am</string>
+    <string name="_11_59_pm">11:59 pm</string>
+    <string name="will_be_implemented_in_beta">Will be implemented in beta</string>
+    <string name="total_duaration">Total Duration</string>
+    <string name="select_this_flight">Select this Flight</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_flights">Confirm Flights</string>
+    <string name="flight_details">Flight Details</string>
+    <string name="flight_no">Flight No</string>
+    <string name="add_traveller_info">Add Traveler Information</string>
+    <string name="click_to_add_info">Click to Add Information</string>
+    <string name="add_info">Add Information</string>
+    <string name="add">Add</string>
+    <string name="add_payment_details">Add Payment Details</string>
+    <string name="choose_payment_method">Choose Payment Method</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="edit">Edit</string>
+    <string name="middleName">Middle Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">DOB</string>
+    <string name="add_infor">Add Information</string>
+
+    <string name="expiring_date">Expirition Date Ex: YYYY-MM</string>
+    <string name="passport_expiring_date">Passport Expiy</string>
+    <string name="cvv">CVV</string>
+    <string name="credit_card_validity">Credit card number should not be less that sixteen(16) digits.</string>
+    <string name="cvv_card_validity">CVV number should not be less than three(3) digits.</string>
+    <string name="name_appearing_on_the_card">Name Appearing on the Card</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="terms_and_condition">Terms and Condition</string>
+    <string name="card_details">Card Details</string>
+    <string name="please_select_valid_date">Please select valid date.</string>
+    <string name="delete">Delete</string>
+    <string name="BookingHistory">Booking History</string>
+    <string name="total_bil">Total Bill</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="outbound">Outbound</string>
+    <string name="Inbound">Inbound</string>
+    <string name="tripDetail">Trip Detail</string>
+    <string name="please_select_travel_from">Please select travel from</string>
+    <string name="please_select_travel_to">Please select travel to</string>
+    <string name="please_select_from_date">Please select from date</string>
+    <string name="please_select_to_date">Please select to date</string>
+    <string name="please_select_dep_date">Please select Departure Date</string>
+    <string name="please_select_return_date">Please select Return Date</string>
+    <string name="search_hotel_apartments_more"><![CDATA[Search Hotels, Apartments & More..]]></string>
+    <string name="work">Work</string>
+    <string name="leisure">Leisure</string>
+    <string name="rooms">Room</string>
+    <string name="no_of_rooms_and_persons">No. Of Rooms, Adults &amp; Children\'s</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="please_select_checkin_date">Please select check in date</string>
+    <string name="please_select_checkout_date">Please select check out date</string>
+    <string name="please_select_location">Please select location</string>
+    <string name="areas">Areas</string>
+    <string name="price_range">Price Range</string>
+    <string name="hotel_name">Hotel Name</string>
+    <string name="no_data">No result found</string>
+    <string name="location_error">Can\\\'t get your Location Try getting using Location Button</string>
+    <string name="gps_question">Location is Disabled.Do you want to enable it</string>
+    <string name="internet_not_connected">Internet is not Connected</string>
+    <string name="readmore">Read More</string>
+    <string name="hotel_policies">Policies</string>
+    <string name="hotel_facilities">Facilities</string>
+    <string name="reviews">Reviews</string>
+    <string name="ad_reviews">Add Review</string>
+    <string name="view_all">View All</string>
+    <string name="review">Review</string>
+    <string name="enter_your_review_here">Enter Your Review Here...</string>
+    <string name="please_enter_review">Please enter review</string>
+    <string name="book_room">Book Room</string>
+
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+    <string name="room_details">Room Details</string>
+    <string name="add_guest_information">Add Guest Information</string>
+    <string name="name_email_phone_number"><![CDATA[Name, Email & Phone Number]]></string>
+    <string name="name_phone_number"><![CDATA[Name, Gender & Phone Number]]></string>
+    <string name="name_of_the_guest">Name of the Guest</string>
+    <string name="guest_info">Guest Information</string>
+    <string name="nights">Nights</string>
+    <string name="no_of_rooms">No Of Rooms</string>
+    <string name="hotel_room_information">Hotel Room Information</string>
+    <string name="childerns_extera_bed"><![CDATA[Childerns & Extra Bed]]></string>
+    <string name="edit_book_details">Edit Booking Details</string>
+    <string name="pick_up">Pick-Up</string>
+    <string name="address">Address</string>
+    <string name="drop_off">Drop-off</string>
+    <string name="pick_up_date">Pick-Up Date</string>
+    <string name="please_select_drop_date">Please select drop off date</string>
+    <string name="please_select_pick_date">Please select pick up date</string>
+    <string name="dropoff">Drop Off</string>
+    <string name="pickup">Pick Up</string>
+    <string name="nearby">Nearby</string>
+    <string name="please_select_pickup_location">Please select pick-up location</string>
+    <string name="please_select_dropoff_location">Please select drop-off location</string>
+    <string name="about_this_car">About this Car</string>
+    <string name="reserve">Reserve</string>
+    <string name="select_time">Select Time</string>
+    <string name="add_driver_information">Add Driver Information</string>
+    <string name="flight_book_details">Flight Booking Details</string>
+    <string name="car_book_deatils">Car Booking Details</string>
+    <string name="hotel_book_deatils">Hotel Booking Details</string>
+    <string name="hotel_deatils">Hotel Details</string>
+    <string name="please_select_destination">Please select destination</string>
+    <string name="book_now">Book Now</string>
+    <string name="total_price">Total Price</string>
+    <string name="duration">Duration</string>
+    <string name="search_near_by">Search Near By</string>
+    <string name="specs">Specifications</string>
+    <string name="itinerary">Itinerary</string>
+    <string name="traveller_reviews">Traveller Reviews</string>
+    <string name="traveller">Traveler</string>
+    <string name="package_bok_deatils">Package Booking Details</string>
+    <string name="show_detail">Show Detail</string>
+    <string name="hide_details">Hide Details</string>
+    <string name="please_enter_valid_phone">Please enter valid phone number</string>
+    <string name="please_enter_phone">Please enter phone number</string>
+    <string name="please_select_birth_date">Please select Date of Birth</string>
+    <string name="please_login_first">Please login first</string>
+    <string name="first_class">First-Class</string>
+    <string name="first_prem">Premium \n First</string>
+    <string name="business">Business</string>
+    <string name="business_prem">Premium Business</string>
+    <string name="economy">Economy</string>
+    <string name="economy_prem">Premium Economy</string>
+    <string name="flying_from">Flying from</string>
+    <string name="flying_to">Flying to</string>
+    <string name="departure_arrival_cites_same">Departure and Arrival Cites can not be same</string>
+    <string name="log_in_with">Log In with</string>
+    <string name="please_enter_valid_date">Please select valid date</string>
+    <string name="amenities">Amenities</string>
+    <string name="please_select_pick_time">Please select pick up time</string>
+    <string name="please_select_drop_time">Please select drop off time</string>
+    <string name="book_package">Book Package</string>
+    <string name="manage_bookings">Manage Bookings</string>
+    <string name="language_currency"><![CDATA[Language & Currency]]></string>
+    <string name="about_amyal">About Amyal</string>
+    <string name="share_us">Share Us:</string>
+
+    <string name="please_wait">Please Wait...</string>
+    <string name="countries">Countries</string>
+    <string name="room">Rooms</string>
+    <string name="see_all">See All</string>
+    <string name="please_add_guest_info">Please Add Guest Information</string>
+    <string name="please_add_payment_info">Please Add Payment Information</string>
+    <string name="no_reviews_found">No Reviews Found</string>
+    <string name="cancel_booking">Cancel Reservation</string>
+    <string name="review_added_success">Review Added Succesfully</string>
+    <string name="room_type">Room Type</string>
+    <string name="credit_card_no">Credit card number should not be less than 16 digits.</string>
+    <string name="cvv_should">CVV should not be less than 3 digits</string>
+    <string name="please_select_card_type">Please select card type</string>
+    <string name="about">About</string>
+    <string name="booking_canceled_success">Booking Canceled Sccessfully</string>
+    <string name="filter_reset">Filter Reset Successfully</string>
+    <string name="please_select_language">Please Select Languange</string>
+    <string name="please_selec_curency">Please Select Currency.</string>
+    <string name="main_traveler">Main Traveler</string>
+    <string name="no_return">No Return</string>
+    <string name="passport">Passport Number</string>
+    <string name="invalid_passport">Invalid Passport Numnber</string>
+    <string name="driver_age">Driver Age</string>
+    <string name="residence_country">Residence Country</string>
+    <string name="enter_driver_age">Enter Driver Age Here</string>
+    <string name="please_enter_driver_age">Please enter driver age</string>
+    <string name="car_type">Car Type :</string>
+    <string name="air_condition">Air Condition :</string>
+    <string name="Transmission">Transmission :</string>
+    <string name="FuelType">Fuel :</string>
+    <string name="Specifications">Specifications</string>
+    <string name="hire_car">Hire Car</string>
+    <string name="pikup">Pick Up</string>
+    <string name="hours_of_operation">Hours of operation</string>
+    <string name="car">Car</string>
+    <string name="pick_up_address">Pick Up Address</string>
+    <string name="no_reviews">No Reviews to show.</string>
+    <string name="limited_milage">Limited Milage</string>
+    <string name="air_conditioning">Air Conditioning</string>
+    <string name="unlimited_milage">Unlimited Milage</string>
+    <string name="manual">Manual</string>
+    <string name="automatic">Automatic</string>
+    <string name="petrol">Petrol</string>
+    <string name="Diesel">Diesel</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="lpg_compressed_gas">LPG/Compressed Gas</string>
+    <string name="multi_fuel_power">Multi Fuel/Power</string>
+    <string name="please_add_driver_info">Please Add Driver Information</string>
+    <string name="feedback_empty">Please enter feedback</string>
+    <string name="discounted">Discounted</string>
+    <string name="inclusions">Inclusions</string>
+    <string name="days">Days</string>
+    <string name="no_discription">No description available.</string>
+    <string name="main_guset">Main Guest</string>
+    <string name="guest">Guest</string>
+    <string name="destination">Destination</string>
+    <string name="source">Source</string>
+    <string name="please_select_souce_location">Please select source location</string>
+    <string name="city">City</string>
+    <string name="postalcode">Postal Code</string>
+    <string name="about_this_package">About this Package</string>
+    <string name="surname">SurName</string>
+    <string name="read_policy">Read policy to proceed</string>
+    <string name="no_app_found">No app found</string>
+    <string name="username_required">Name required</string>
+    <string name="dob_required">DOB required</string>
+    <string name="valid_address">Please enter valid address</string>
+    <string name="valid_city">Please enter valid city</string>
+    <string name="valid_date">Please enter valid date.</string>
+    <string name="arrivaltime">Arrival Time</string>
+    <string name="departuretime">Departure Time</string>
+    <string name="rating">Rating</string>
+    <string name="z_to_a">Z to A</string>
+    <string name="a_to_z">A to Z</string>
+    <string name="_1_adult_0_children_0_infant">1 Adult,0 Children, 0 infant</string>
+    <string name="are_you_sure_cancel_booking">Are you sure you wan\'t to cancel this booking?</string>
+    <string name="add_travlerdetail">Traveller Details</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        android:orientation="horizontal">
+
+        <com.app.amyal.ui.views.AnyTextView1
+            android:id="@+id/tvRoomName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Room Type"
+            app:typeface="@string/font_normal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.app.amyal.ui.views.AnyTextView1
+                android:id="@+id/tvPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:text="AED 1500.00"
+                app:typeface="@string/font_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dropdown_filter"
+                android:layout_marginRight="@dimen/x5"
+                android:rotation="270"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x5"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.app.amyal.ui.views.AnyTextView1
+            android:id="@+id/tvDiscountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkBrown"
+            android:textSize="@dimen/x14"
+            android:text="Special Deal"
+            app:typeface="@string/font_normal" />
+
+        <com.app.amyal.ui.views.AnyTextView1
+            android:id="@+id/tvDiscountDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12"
+            android:singleLine="false"
+            android:alpha="0.6"
+            android:maxLines="3"
+            android:text="20 % discount on this room"
+            app:typeface="@string/font_normal" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.2"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"/>
+
+</LinearLayout>

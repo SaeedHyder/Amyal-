@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "221385115813",
+    "firebase_url": "https://amyaal-187816.firebaseio.com",
+    "project_id": "amyaal-187816",
+    "storage_bucket": "amyaal-187816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221385115813:android:377abfb7579f0ed4",
+        "android_client_info": {
+          "package_name": "com.app.amyal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221385115813-q10jc7pmbr69l11iihogqjlulfpnl45u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.amyal",
+            "certificate_hash": "68e91fbdaa381c3899c2a14e1969e3ad1465d71f"
+          }
+        },
+        {
+          "client_id": "221385115813-kt6d6gede2qll2ai34cehp18i6m9db2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQpUf689kOKkfB_y8vPxUhO1SiGO0QSEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221385115813-kt6d6gede2qll2ai34cehp18i6m9db2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

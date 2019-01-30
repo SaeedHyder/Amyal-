@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/svmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_marginBottom="@dimen/x3"
+            android:alpha="0.2"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/checkin1" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtCheckin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/check_in"
+                android:imeOptions="actionNext"
+                android:focusable="false"
+                android:enabled="false"
+                android:text="Mon 23 Oct"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/checkin1" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/check_out"
+                android:imeOptions="actionNext"
+                android:focusable="false"
+                android:enabled="false"
+                android:text="Mon 24 Oct"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/nights" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtNights"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/nights"
+                android:text="1 Night"
+                android:enabled="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:src="@drawable/room" />
+
+            <com.app.amyal.ui.views.AnyEditTextView
+                android:id="@+id/edtNoOfRooms"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.7"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/no_of_rooms"
+                android:text=""
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/x15"
+                app:typeface="@string/font_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white" />
+
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginTop="@dimen/x30"
+            android:maxLines="1"
+            android:text="@string/hotel_room_information"
+            android:textColor="@color/darkBrown"
+            android:textSize="@dimen/x18"
+            app:typeface="@string/font_normal" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x8"
+            android:alpha="0.2"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/x15">
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                app:typeface="@string/font_normal"
+                android:text="Maximum Occupancy" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x2"
+                app:typeface="@string/font_normal"
+                android:text="1 Adult Per Room" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                android:layout_marginTop="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:text="Meal Plan" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x2"
+                app:typeface="@string/font_normal"
+                android:text="Breakfast Included" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                android:layout_marginTop="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:text="Cancellation Policy" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x2"
+                app:typeface="@string/font_normal"
+                android:text="Free Cancellation" />
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                android:layout_marginTop="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:text="Hotel Policies" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:layout_marginTop="@dimen/x2"
+                    app:typeface="@string/font_normal"
+                    android:text="@string/check_in" />
+
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x2"
+                    app:typeface="@string/font_normal"
+                    android:text="From 12:00" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:layout_marginTop="@dimen/x2"
+                    app:typeface="@string/font_normal"
+                    android:text="@string/check_out" />
+
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/x2"
+                    app:typeface="@string/font_normal"
+                    android:text="To 12:00" />
+
+
+
+            </RelativeLayout>
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                android:layout_marginTop="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:text="Accepted Payment" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x2"
+                app:typeface="@string/font_normal"
+                android:text="Cash, Visa Electronic, Mastercard" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x16"
+                android:layout_marginTop="@dimen/x15"
+                app:typeface="@string/font_normal"
+                android:text="@string/childerns_extera_bed" />
+
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x2"
+                app:typeface="@string/font_normal"
+                android:text="Rolling Bed Avaliable for extra (Charges Apply)" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.2"
+            android:background="@color/white" />
+
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x60"
+            android:layout_marginEnd="@dimen/x25"
+            android:layout_marginStart="@dimen/x25"
+            android:layout_marginTop="@dimen/x25"
+            android:background="@drawable/btn"
+            android:text="@string/done"
+            android:textSize="@dimen/x18"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

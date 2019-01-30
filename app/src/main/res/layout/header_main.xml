@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_marginTop="24dp">
+
+
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x10"
+        android:padding="@dimen/x10"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/flHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/ivTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:src="@drawable/logotop"
+            android:visibility="visible" />
+
+        <com.app.amyal.ui.views.AnyTextView1
+            android:id="@+id/txt_subHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:text="Template"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x20"
+            app:typeface="@string/font_normal" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llanchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnRight"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btnRight2"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x10"
+        android:src="@drawable/ic_launcher"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/btnRight2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x10"
+        android:src="@drawable/ic_launcher"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRight2"
+        android:layout_alignEnd="@+id/btnRight2"
+        android:layout_alignStart="@+id/btnRight2"
+        android:layout_alignTop="@+id/btnRight2">
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:id="@+id/txtBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/badge_drawable"
+            android:gravity="center"
+            android:maxLength="2"
+            android:paddingBottom="@dimen/x3"
+            android:paddingLeft="@dimen/x4"
+            android:paddingRight="@dimen/x4"
+            android:paddingTop="@dimen/x3"
+            android:text="22"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x7"
+            app:typeface="@string/font_bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

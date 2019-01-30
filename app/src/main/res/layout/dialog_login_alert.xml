@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="@dimen/x250"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:typeface="@string/font_normal" />
+
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x30"
+            android:layout_marginBottom="@dimen/x20"
+            android:gravity="center"
+            android:alpha="0.6"
+            android:text="To continue you have to login. Press Ok to proceed to login screen"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x17"
+            app:typeface="@string/font_normal" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x15"
+            android:text="@string/ok"
+            android:textSize="@dimen/x18"
+            android:background="@drawable/btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

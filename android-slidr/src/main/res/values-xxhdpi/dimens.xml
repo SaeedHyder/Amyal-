@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="bubble_padding">-9.5dp</dimen>
+    <dimen name="bubble_spaccing">20.8dp</dimen>
+</resources>

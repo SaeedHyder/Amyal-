@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "62449210042",
+    "firebase_url": "https://amyal-741b9.firebaseio.com",
+    "project_id": "amyal-741b9",
+    "storage_bucket": "amyal-741b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62449210042:android:377abfb7579f0ed4",
+        "android_client_info": {
+          "package_name": "com.app.amyal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62449210042-sun9mrnnp2bgr4hjgc2bq0f4j4un8tge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAELaVUx4rQrYmUB4k4gtM7BvUHqWPBFJ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

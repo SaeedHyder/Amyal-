@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/x5"
+            android:alpha="0.2"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:background="@drawable/roundshapelayout"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginBottom="@dimen/x10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x5"
+                android:orientation="vertical">
+
+                <com.app.amyal.ui.views.AnyEditTextView
+                    android:id="@+id/tvHotelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginRight="@dimen/x10"
+                    android:hint="@string/hotel_name"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/grey"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:padding="@dimen/x12"
+                    android:singleLine="false"
+                    android:textSize="@dimen/x16"
+                    app:typeface="@string/font_normal" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/x35"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="0.2"
+                android:visibility="gone"
+                android:background="@drawable/ic_close_dark"
+                android:padding="@dimen/x5" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llPriceRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/roundshapelayout"
+            android:orientation="vertical"
+            android:padding="@dimen/x10">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:gravity="left"
+                android:text="@string/price_range"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x18"
+                app:typeface="@string/font_normal" />
+
+
+            <com.app.amyal.ui.views.RangeSeekBar
+                android:id="@+id/rvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/x5"
+                android:visibility="visible"
+                app:absoluteMaxValue="10000"
+                app:absoluteMinValue="0"
+                app:activateOnDefaultValues="true"
+                app:activeColor="@color/off_white"
+                app:barHeight="@dimen/x10"
+                app:defaultColor="@color/off_white"
+                app:showLabels="false"
+                app:singleThumb="false"
+                app:thumbNormal="@drawable/circle_price"
+                app:thumbPressed="@drawable/circle_price"
+                app:valuesAboveThumbs="false"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvStartPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:text="USD 0.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x11"
+                    app:typeface="@string/font_normal" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvEndPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:text="USD 10000.00"
+                    android:textColor="@color/dark_green"
+                    android:textSize="@dimen/x11"
+                    app:typeface="@string/font_normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginBottom="@dimen/x10"
+            android:background="@drawable/roundshapelayout"
+            android:orientation="vertical">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Star Rating"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x18"
+                android:layout_margin="@dimen/x10"
+                app:typeface="@string/font_normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_gravity="center_vertical">
+
+                <com.app.amyal.ui.views.CustomRatingBar
+                    android:id="@+id/CrRating"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="@dimen/x25"
+                    android:visibility="visible"
+                    app:maxStars="5"
+                    app:starOff="@drawable/star1"
+                    app:starOn="@drawable/star"
+                    app:starPadding="@dimen/x2"
+                    app:stars="0" />
+
+                <com.app.amyal.ui.views.AnyTextView
+                    android:id="@+id/tvStars"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 Stars"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/x15"
+                    app:typeface="@string/font_normal"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCountrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:background="@drawable/roundshapelayout"
+            android:orientation="vertical">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/countries"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x18"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                app:typeface="@string/font_normal"/>
+
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginBottom="@dimen/x5"
+                style="@style/filter_spinner_style"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAreasSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:background="@drawable/roundshapelayout"
+            android:orientation="vertical">
+
+            <com.app.amyal.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/areas"
+                android:textColor="@color/darkBrown"
+                android:textSize="@dimen/x18"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                app:typeface="@string/font_normal"/>
+
+            <Spinner
+                android:id="@+id/spAreas"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginBottom="@dimen/x5"
+                style="@style/filter_spinner_style"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x28"
+            android:layout_marginStart="@dimen/x28"
+            android:layout_marginBottom="@dimen/x60"
+            android:background="@drawable/btn"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/x18"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+package com.app.amyal.ui.views;
+
+import android.content.Context;
+import android.util.AttributeSet;
+
+public class AnyTextView extends AutoResizeTextView {
+	
+	public AnyTextView( Context context ) {
+		super( context );
+	}
+	
+	public AnyTextView( Context context, AttributeSet attrs ) {
+		super( context, attrs );
+		
+		if ( !isInEditMode() ) {
+			Util.setTypeface( attrs, this );
+		}
+	}
+	
+	public AnyTextView( Context context, AttributeSet attrs, int defStyle ) {
+		super( context, attrs, defStyle );
+		
+		if ( !isInEditMode() ) {
+			Util.setTypeface( attrs, this );
+		}
+	}
+}

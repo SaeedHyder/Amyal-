@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/x5"
+        android:background="@color/white" />
+
+    <com.app.amyal.ui.views.AnyTextView
+        android:id="@+id/txt_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x20"
+        app:typeface="Roboto-Regular.ttf"
+
+        />
+
+    <ListView
+        android:id="@+id/lv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+
+</LinearLayout>

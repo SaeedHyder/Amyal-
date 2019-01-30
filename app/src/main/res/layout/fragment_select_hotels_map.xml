@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <com.app.amyal.ui.views.AnyTextView
+            android:id="@+id/txt_noresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/x5"
+            android:paddingStart="@dimen/x8"
+            android:paddingEnd="@dimen/x8"
+            android:paddingTop="@dimen/x2"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x20"
+            android:textStyle="normal"
+            android:visibility="gone"
+            app:typeface="@string/font_normal"/>
+
+        <LinearLayout
+            android:id="@+id/ll_searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_marginTop="@dimen/x12"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x10"
+                android:contentDescription=""
+                android:padding="@dimen/x7"
+                android:src="@drawable/search_red"
+                tools:ignore="ContentDescription"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginLeft="@dimen/x7"
+                android:layout_marginRight="@dimen/x6"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_toEndOf="@+id/ivSearch"
+                android:alpha="0.3"
+                android:background="@color/black"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/x10"
+                android:paddingEnd="@dimen/x10"
+                android:visibility="gone"
+                android:hint="@string/search"
+                android:textSize="@dimen/x15"/>
+
+            <com.app.amyal.ui.views.AutoCompleteLocation
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/dark_grey"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/x15"
+                app:background_layout="@null"
+                app:hint_text="@string/search" />
+
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btn_location"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginEnd="@dimen/x5"
+            android:visibility="gone"
+            android:src="@drawable/location"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
